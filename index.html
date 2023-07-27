@@ -133,7 +133,7 @@
 
   <!-- relative div -->
 
-  <div class="w-9/12 mx-auto flex justify-center gap-10 bg-white absolute left-32 -bottom-16 shadow-sm py-4 rounded-md">
+  <div class="w-9/12 mx-auto hidden md:flex justify-center gap-10 bg-white absolute left-32 -bottom-16 shadow-sm py-4 rounded-md">
       <div class="text-center text-[#121212]">
         <img src="./images/fruit1.png" alt="">
         <p>Grap</p>
@@ -226,7 +226,7 @@
               <i class="fa-regular fa-star"></i>
             </div>
             <div class="">
-              <button class="btn btn-ghost text-[#F85559] normal-case">Details</button>
+              <button class="btn btn-ghost text-[#F85559] normal-case" onclick="my_modal_1.showModal()" >Details</button>
             </div>
           </div>
         </div>
@@ -236,7 +236,7 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="border-solid border-2  border-sky-50 font-extrabold font-[#121212] bore px-8 py-3 mb-5">12.90$-18.85$</h2>
-            <p>Apples</p>
+            <p>Orange</p>
             <div class="text-[#F85559]">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -245,7 +245,7 @@
               <i class="fa-regular fa-star"></i>
             </div>
             <div class="">
-              <button class="btn btn-ghost text-[#F85559] normal-case">Details</button>
+              <button class="btn btn-ghost text-[#F85559] normal-case" onclick="my_modal_2.showModal()" >Details</button>
             </div>
           </div>
         </div>
@@ -255,7 +255,7 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="border-solid border-2  border-sky-50 font-extrabold font-[#121212] bore px-8 py-3 mb-5">12.90$-18.85$</h2>
-            <p>Apples</p>
+            <p>Dragon</p>
             <div class="text-[#F85559]">
               <i class="fa-solid fa-star"></i>
               <i class="fa-regular fa-star"></i>
@@ -264,7 +264,7 @@
               <i class="fa-regular fa-star"></i>
             </div>
             <div class="">
-              <button class="btn btn-ghost text-[#F85559] normal-case">Details</button>
+              <button class="btn btn-ghost text-[#F85559] normal-case" onclick="my_modal_3.showModal()" >Details</button>
             </div>
           </div>
         </div>
@@ -274,7 +274,7 @@
           </figure>
           <div class="card-body items-center text-center">
             <h2 class="border-solid border-2  border-sky-50 font-extrabold font-[#121212] bore px-8 py-3 mb-5">12.90$-18.85$</h2>
-            <p>Apples</p>
+            <p>Banana</p>
             <div class="text-[#F85559]">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -283,7 +283,7 @@
               <i class="fa-solid fa-star"></i>
             </div>
             <div class="">
-              <button class="btn btn-ghost text-[#F85559] normal-case">Details</button>
+              <button class="btn btn-ghost text-[#F85559] normal-case" onclick="my_modal_4.showModal()" >Details</button>
             </div>
           </div>
         </div>
@@ -291,6 +291,107 @@
       <div class="text-center mt-16 mb-20">
         <button class="btn border-none bg-[#F85559] text-white">Shop All</button>
       </div>
+
+<!-- =mmmmmmmmmmmmmmmmmmmmmmmmm Modal content mmmmmmmmmmmmmmmmmmmmmmmmmmm===  -->
+        <!-- modal 1 ----------------------------------------------------------------------->
+
+        <dialog id="my_modal_1" class="modal">
+          <form method="dialog" class="modal-box text-center">
+            <figure class="px-10 pt-10 flex justify-center">
+              <img src="./images/fruit6.png" alt="banana" class="" />
+            </figure>
+            <h3 class="font-bold text-lg">Apple</h3>
+            <p class="py-1">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            <div class="text-[#F85559]">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="modal-action flex justify-center">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+              <button class="btn border-none bg-[#F85559] text-white">Buy Now</button>
+            </div>
+          </form>
+        </dialog> 
+
+        <!-- modal 2 ---------------------------------------------------------------->
+
+        <dialog id="my_modal_2" class="modal">
+          <form method="dialog" class="modal-box text-center">
+            <figure class="px-10 pt-10 flex justify-center">
+              <img src="./images/fruit7.png" alt="banana" class="" />
+            </figure>
+            <h3 class="font-bold text-lg">Orange</h3>
+            <p class="py-1">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            <div class="text-[#F85559]">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="modal-action flex justify-center">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+              <button class="btn border-none bg-[#F85559] text-white">Buy Now</button>
+            </div>
+          </form>
+        </dialog> 
+
+        <!-- modal 3 ----------------------------------------------------------------------------- -->
+        <dialog id="my_modal_3" class="modal">
+          <form method="dialog" class="modal-box text-center">
+            <figure class="px-10 pt-10 flex justify-center">
+              <img src="./images/fruit8.png" alt="banana" class="" />
+            </figure>
+            <h3 class="font-bold text-lg">Dragon</h3>
+            <p class="py-1">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            <div class="text-[#F85559]">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="modal-action flex justify-center">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+              <button class="btn border-none bg-[#F85559] text-white">Buy Now</button>
+            </div>
+          </form>
+        </dialog> 
+ 
+                <!-- modal 4 ----------------------------------------------------------------------------- -->
+        <dialog id="my_modal_4" class="modal">
+          <form method="dialog" class="modal-box text-center">
+            <figure class="px-10 pt-10 flex justify-center">
+              <img src="./images/fruit8.png" alt="banana" class="" />
+            </figure>
+            <h3 class="font-bold text-lg">Dragon</h3>
+            <p class="py-1">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            <div class="text-[#F85559]">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="modal-action flex justify-center">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+              <button class="btn border-none bg-[#F85559] text-white">Buy Now</button>
+            </div>
+          </form>
+        </dialog> 
+
+      
+
+<!-- =mmmmmmmmmmmmmmmmmmmmmmmmm Modal content mmmmmmmmmmmmmmmmmmmmmmmmmmm===  -->
+
+
     </section>
 
     <!-- ============= deal of the day section end ============-->
@@ -372,6 +473,11 @@
 
 
     <!--============ meet the team section end ============= -->
+
+
+
+
+
 
 
 
